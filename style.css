@@ -1,0 +1,252 @@
+
+/* ==========================
+   ESTILOS GENERALES
+========================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #29252a;
+    background-color: #ffffff;
+}
+
+a {
+    overflow-wrap: anywhere;
+}
+
+section {
+    scroll-margin-top: 20px;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ==========================
+   MENÚ DE NAVEGACIÓN
+========================== */
+
+.navbar {
+    background-color: #243746 !important;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.navbar .nav-link {
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #b9e3f5 !important;
+}
+
+
+/* ==========================
+   PRESENTACIÓN
+========================== */
+
+header {
+    background: linear-gradient(135deg, #ffffff, #eaf6fc);
+    padding: 70px 20px !important;
+}
+
+header img {
+    border: 5px solid #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+header .lead {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #347da5;
+}
+
+.presentacion-texto {
+    color: #6f6267;
+    font-size: 1.05rem;
+    margin-top: 10px;
+}
+
+
+/* ==========================
+   TÍTULOS
+========================== */
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#portfolio h2 {
+    margin-bottom: 12px;
+}
+
+
+/* ==========================
+   PORTFOLIO Y TARJETAS
+========================== */
+
+#portfolio > .container > p {
+    color: #6f6267;
+    margin-bottom: 30px;
+}
+
+#portfolio .card {
+    height: 100%;
+    border: none;
+    border-top: 4px solid #65aed4;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+#portfolio .card:hover {
+    transform: translateY(-5px);
+}
+
+#portfolio .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    padding: 25px;
+    gap: 8px;
+}
+
+#portfolio .card-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 7px;
+}
+
+#portfolio .card-text {
+    color: #6f6267;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    min-height: 50px;
+}
+
+#portfolio .card .btn {
+    margin-top: auto;
+}
+
+
+/* ==========================
+   BOTONES
+========================== */
+
+.btn-dark {
+    background-color: #243746;
+    border-color: #243746;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: #4b98c2;
+    border-color: #4b98c2;
+}
+
+
+/* ==========================
+   ACERCA DE MÍ
+========================== */
+
+#acerca-de-mi {
+    background-color: #eaf6fc !important;
+}
+
+#acerca-de-mi .container {
+    max-width: 850px;
+}
+
+#acerca-de-mi h2 {
+    margin-bottom: 25px;
+}
+
+#acerca-de-mi p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* ==========================
+   CONTACTO
+========================== */
+
+#contacto a {
+    color: #347da5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contacto a:hover {
+    color: #65aed4;
+    text-decoration: underline;
+}
+
+
+/* ==========================
+   PIE DE PÁGINA
+========================== */
+
+footer {
+    background-color: #243746 !important;
+}
+
+
+/* ==========================
+   AJUSTES PARA CELULARES
+========================== */
+
+@media (max-width: 767px) {
+
+    header {
+        padding: 50px 20px !important;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    h2,
+    #portfolio h2 {
+        font-size: 1.5rem;
+    }
+
+    #portfolio .card-body {
+        padding: 20px;
+    }
+
+    #portfolio .card-text {
+        min-height: auto;
+    }
+}
